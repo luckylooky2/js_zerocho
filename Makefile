@@ -1,6 +1,6 @@
 up:
 	@docker build -t js .
-	@docker run -p 3000:3000 -v $(PWD):/app/frontend --name js js
+	@docker run -it --init -p 3000:3000 -v $(PWD):/app/frontend --name js js
 
 start:
 	@docker start js
