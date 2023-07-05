@@ -36,6 +36,10 @@ const config = {
         },
         exclude: path.join(__dirname, 'node_modules'),
       },
+      {
+        test: /\.css?$/,
+        use: ['style-loader', 'css-loader'],
+      },
     ],
   },
   plugins: [new webpack.LoaderOptionsPlugin({ debug: true }), new ReactRefreshWebpackPlugin()],
