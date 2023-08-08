@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
-import { okaidia } from 'react-syntax-highlighter/dist/esm/styles/prism';
+import { coyWithoutShadows } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 const MarkdownForm = ({ content }) => {
   return (
@@ -14,7 +14,7 @@ const MarkdownForm = ({ content }) => {
             <SyntaxHighlighter
               {...props}
               children={String(children).replace(/\n$/, '')}
-              style={okaidia}
+              style={coyWithoutShadows}
               language={match[1]}
               PreTag="div"
             />
