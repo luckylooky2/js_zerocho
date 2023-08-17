@@ -5,6 +5,7 @@ import chapterOneOne from '@src/1-1';
 import chapterOneThree from '@src/1-3';
 import chapterOneFour from '@src/1-4';
 import chapterOneFive from '@src/1-5';
+import chapterOneSix from './src/1-6';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <Route path="/1-3" Component={chapterOneThree} />
       <Route path="/1-4" Component={chapterOneFour} />
       <Route path="/1-5" Component={chapterOneFive} />
+      <Route path="/1-6" Component={chapterOneSix} />
     </Routes>
   );
 };

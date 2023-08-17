@@ -2,7 +2,9 @@ import React, { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 
 const MainRouter = () => {
-  const contentList = [['함수와 함수의 호출 / 고차함수', '', '호출 스택 분석', '스코프 체인', '호이스팅']];
+  const contentList = [
+    ['함수와 함수의 호출 / 고차함수', '', '호출 스택 분석', '스코프 체인', '호이스팅', 'this는 호출 때 결정된다고!!!'],
+  ];
 
   return (
     <>
